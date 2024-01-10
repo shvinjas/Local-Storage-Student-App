@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+body{
+background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+main{
+    width:80%;
+    margin:15px auto 0;
+}
+
+#studentForm input[name="name"]{
+    grid-area: name;
+}
+#studentForm input[age="age"]{
+    grid-area: age;
+}
+#studentForm input[roll="roll"]{
+    grid-area: roll;
+}
+#studentForm  button{
+    grid-area: button;
+}
+
+#studentForm{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "name name"
+    "age roll"
+    "button button";
+    
+}
+
+#studentForm *{
+    margin:7px;
+    padding:7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+   
+}
+
+#studentForm button{
+    background-color: #b8e994;
+    outline: none;
+    color:black;
+    border:5px solid transparent;
+    cursor: pointer;
+}
+
+#studentForm input{
+    border:3px solid #0a3d62;
+    outline: none;
+}
+#studentForm input:focus{
+    border:3px solid #e15f41;
+}
+#studentForm button:active{
+    border-color: #e15f41;
+}
+.studentList{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid gray;
+    background-color: #fff;
+    color:black;
+    border-radius: 15px;
+}
+
+.students div{
+    width:100%;
+    padding:10%;
+    text-align: center;
+}
+
+.students div *{
+    margin: 5px; 
+}
+
+.studentList{
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.studentList div{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sticky{
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin:10px;
+    border-radius: 10px;
+  
+    gap:0px;
+}
+
+.sticky h2,p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    
+}
